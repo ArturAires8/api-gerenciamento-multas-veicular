@@ -36,7 +36,6 @@ public class ProprietarioController {
     @ResponseStatus(HttpStatus.CREATED)
     public Proprietario adicionar(@Valid @RequestBody Proprietario proprietario) {
         return registroProprietarioService.salvar(proprietario);
-//        return proprietarioRepository.save(proprietario);
 
     }
 
